@@ -2,7 +2,10 @@ fetch("actors.json")
 . then(res=>res.json())
 .then(handleData);
 
-function HandleData(actor) {
-    forEach.actor()
+function HandleData(actors) {
+    forEach.actors ==> displayActors()
+}
+
+function displayActors(actor) {
 
 }
