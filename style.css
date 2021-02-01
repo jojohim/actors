@@ -4,3 +4,6 @@
 
 /*FETCH JSON*/
 
+template {
+    grid-template-columns: 1fr 1fr;
+}
