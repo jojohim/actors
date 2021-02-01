@@ -19,5 +19,3 @@ function displayActor(actor) {
 
     document.querySelector("body").appendChild(copy)
 }
-
-
