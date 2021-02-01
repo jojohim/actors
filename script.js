@@ -1,3 +1,5 @@
+//FETCHING AND SORTING
+
 fetch("actors.json")
     .then(res => res.json())
     .then(handleData);
@@ -14,8 +16,15 @@ function displayActor(actor) {
 
     const copy = template.cloneNode(true);
 
-    copy.querySelector(".actor").textContent = actor.fullname;
-    copy.querySelector(".movie").textContent = actor.movie;
+    copy.querySelector("#actor").textContent = actor.fullname;
+    copy.querySelector("#movie").textContent = actor.movie;
 
     document.querySelector("body").appendChild(copy)
 }
+
+//CLICK EVENT
+
+const MOVIE = document.querySelector("#movie");
+const BUTTON = document.querySelector("#actor");
+
+MOVIE.classList.remove("hide")
