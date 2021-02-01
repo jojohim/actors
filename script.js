@@ -14,11 +14,10 @@ function displayActor(actor) {
 
     const copy = template.cloneNode(true);
 
-    copy.querySelector("h2").textContent = actor.fullname;
-    copy.querySelector("h3").textContent = actor.movie;
+    copy.querySelector(".actor").textContent = actor.fullname;
+    copy.querySelector(".movie").textContent = actor.movie;
 
     document.querySelector("body").appendChild(copy)
-
 }
 
 
