@@ -1,4 +1,3 @@
-
 //FETCHING AND SORTING
 
 fetch("actors.json")
@@ -17,21 +16,21 @@ function displayActor(actor) {
 
     const copy = template.cloneNode(true);
 
-    copy.querySelector("#actor").textContent = actor.fullname;
-    copy.querySelector("#movie").textContent = actor.movie;
+    copy.querySelector(".actor").textContent = actor.fullname;
+    copy.querySelector(".movie").textContent = actor.movie;
 
     document.querySelector("body").appendChild(copy)
 }
 
 //CLICK EVENT
 
-const MOVIE = document.querySelector("#movie");
-const BUTTON = document.querySelector("#actor");
+const MOVIE = document.querySelector(".movie");
+const BUTTON = document.querySelector(".actor");
 
 MOVIE.classList.add(".hide");
 
 function reveal(e) {
-    MOVIE.classList.toggle(".hide");
+   MOVIE.classList.toggle(".hide");
 }
 
 BUTTON.onclick = reveal;

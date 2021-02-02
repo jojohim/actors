@@ -20,7 +20,7 @@ display: grid;
     margin-right: 5vw;
 }
 
-#content {
+.content {
     display: grid;
     margin-left: 20%;
     grid-template-columns: 1fr 1fr;
