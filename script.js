@@ -1,3 +1,4 @@
+
 //FETCHING AND SORTING
 
 fetch("actors.json")
@@ -27,4 +28,10 @@ function displayActor(actor) {
 const MOVIE = document.querySelector("#movie");
 const BUTTON = document.querySelector("#actor");
 
-MOVIE.classList.remove("hide")
+MOVIE.classList.remove(".hide");
+
+function reveal(e) {
+    MOVIE.classList.toggle("hide");
+}
+
+BUTTON.onclick = reveal;
