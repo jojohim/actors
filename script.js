@@ -28,7 +28,7 @@ function displayActor(actor) {
 const MOVIE = document.querySelector("#movie");
 const BUTTON = document.querySelector("#actor");
 
-MOVIE.classList.remove(".hide");
+MOVIE.classList.add(".hide");
 
 function reveal(e) {
     MOVIE.classList.toggle(".hide");
