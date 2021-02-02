@@ -31,7 +31,7 @@ const BUTTON = document.querySelector("#actor");
 MOVIE.classList.remove(".hide");
 
 function reveal(e) {
-    MOVIE.classList.toggle("hide");
+    MOVIE.classList.toggle(".hide");
 }
 
 BUTTON.onclick = reveal;
