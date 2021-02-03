@@ -1,3 +1,6 @@
+const MOVIE = document.querySelector(".movie");
+const BUTTON = document.querySelector(".actor");
+
 //FETCHING AND SORTING
 
 fetch("actors.json")
@@ -7,6 +10,16 @@ fetch("actors.json")
 function handleData(actors) {
     console.log(actors)
     actors.forEach(displayActor);
+    actorClick();
+}
+
+function actorClick() {
+ document.querySelectorAll(".actor").forEach((actor) => {
+ actor.addEventListener("click", (e) => {
+ console.log(e.target);
+ e.target.parentNode.querySelector(".movie").classList.toggle("hide");
+ });
+ });
 }
 
 function displayActor(actor) {
@@ -24,13 +37,11 @@ function displayActor(actor) {
 
 //CLICK EVENT
 
-const MOVIE = document.querySelector(".movie");
-const BUTTON = document.querySelector(".actor");
 
-MOVIE.classList.add(".hide");
+//MOVIE.classList.add(".hide");
 
 function reveal(e) {
-   MOVIE.classList.toggle(".hide");
+  MOVIE.classList.toggle(".hide");
 }
 
-BUTTON.onclick = reveal;
+//BUTTON.onclick = reveal;
